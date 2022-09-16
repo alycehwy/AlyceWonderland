@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(80, 80, 80);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+main {
+    border: 8px solid white;
+}
+
+/* Header */
+header {
+    background: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(0, 172, 228);
+    font-size: 90px;
+    text-shadow: 0 0 50px slategray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px whitesmoke;
+}
+
+/* Navigation */
+nav {
+    background-color:steelblue;
+    padding-right: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+}
+
+nav ul {
+    width: 80%;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color:whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-right: 1px solid white;
+}
+
+nav a:hover {
+    background-color: skyblue;
+    color: darkblue;
+}
+
+nav form {
+    width: 50%;
+    display: flex;
+    text-align: end;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 5px;
+}
+
+nav [type="search"]::placeholder {
+    padding-left: 2%;
+}
+
+nav [type="submit"] {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+    font-weight: 600;
+}
+
+/* Main */
+.main-body {
+    background-color:lightcyan;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Main-top*/
+.top-section {
+    display: flex;
+}
+
+.left-side {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    border: 8px double darkblue;
+}
+
+.right-side {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.right-side fieldset {
+    border-style: dashed;
+    border-color: darkgray;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.right-side legend {
+    display: flex;
+    width: 27%;
+    align-items: center;
+}
+
+.right-side .exp {
+    display: flex;
+    width: 29%;
+    align-items: center;
+}
+
+.right-side legend img {
+    width: 50px;
+    height: 50px;
+    padding: 5%;
+}
+
+.right-side legend h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 0 0 10px slategray;
+}
+
+.right-side a {
+    text-decoration: none;
+    font-style: italic;
+    color: darkblue;
+}
+
+.right-side a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/*Main-bottom*/
+.bottom-section {
+    display: flex;
+    column-gap: 20px;
+}
+
+.bottom-section fieldset {
+    display: flex;
+    border-style: dashed;
+    border-color: darkgray;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+
+.bottom-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 2px;
+}
+
+.bottom-section .edu {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.bottom-section .tech {
+    display: flex;
+    width: 32%;
+    align-items: center;
+}
+
+.bottom-section .soft {
+    display: flex;
+    width: 28%;
+    align-items: center;
+}
+
+.bottom-section .edu legend {
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.bottom-section .tech legend {
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.bottom-section .soft legend {
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.bottom-section legend img {
+    width: 50px;
+    height: 50px;
+    padding: 5%;
+}
+
+.bottom-section legend h2 {
+    font-size: 30px;
+    font-weight: 800;
+    padding-right: 2%;
+    text-shadow: 0 0 10px slategray;
+}
+
+.bottom-section span{
+    font-weight: 600;
+}
+
+.bottom-section ul {
+    padding-left: 16%;
+}
+
+.bottom-section .na {
+    color: lightgray;
+}
+
+/* Gallery */
+.gallery-section {
+    margin-top: 3%;
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+}
+
+.gallery-section h2 {
+    padding: 1%;
+    font-size: 30px;
+}
+
+.gallery-section img {
+    width: 12%;
+    height: 12%;
+    margin-bottom: 1%;
+}
+
+/* Footer */
+footer {
+    background-color:rgb(145, 195, 236);
+    color:navy;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
